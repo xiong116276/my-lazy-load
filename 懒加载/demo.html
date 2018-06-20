@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="black" name="apple-mobile-web-app-status-bar-style">
+	<meta content="telephone=no" name="format-detection">
+	<title>懒加载</title>
+	<link rel="stylesheet" href="css/flex.css">
+	<link rel="stylesheet" href="css/demo.css">
+</head>
+<body>
+	<div class="flex-box flex-v flex-align-center">
+		1<img class="lazy-img" src="../all-img/0.jpg" alt="" />
+		2<img class="lazy-img" src="../all-img/1.jpg" alt="" />
+		3<img class="lazy-img" src="../all-img/2.jpg" alt="" />
+		4<img class="lazy-img" data-src="../all-img/3.jpg" alt="" />
+		5<img class="lazy-img" data-src="../all-img/4.jpg" alt="" />
+		6<img class="lazy-img" data-src="../all-img/5.jpg" alt="" />
+		7<img class="lazy-img" data-src="../all-img/6.jpg" alt="" />
+		8<img class="lazy-img" data-src="../all-img/7.jpg" alt="" />
+		9<img class="lazy-img" data-src="../all-img/8.jpg" alt="" />
+		10<img class="lazy-img" data-src="../all-img/9.jpg" alt="" />
+	</div>
+
+<script src="js/xmn-lazyLoad.js"></script>
+	<script>
+		lazyLoad({
+			"cls":"lazy-img",
+			"lazyBg":"images/lazy.jpg"
+		});
+	</script>
+</body>
+</html>
